@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h1>Smart Food Waste Prediction System</h1>
+
+<div class="dashboard">
+    <div class="card">
+        <h3>Total Students</h3>
+        <h2>@ViewBag.TotalStudents</h2>
+    </div>
+
+    <div class="card">
+        <h3>Total Meals</h3>
+        <h2>@ViewBag.TotalMeals</h2>
+    </div>
+
+    <div class="card">
+        <h3>Total Prepared</h3>
+        <h2>@ViewBag.TotalPrepared</h2>
+    </div>
+
+    <div class="card">
+        <h3>Total Consumed</h3>
+        <h2>@ViewBag.TotalConsumed</h2>
+    </div>
+
+    <div class="card">
+        <h3>Total Waste</h3>
+        <h2>@ViewBag.TotalWaste</h2>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        padding: 30px;
+    }
+
+    .dashboard {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        width: 200px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+</style>
